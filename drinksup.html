@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coffee House</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" />
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	<script src="js/scripts.js"></script>
+    
+	</head>
+<body>
+   <section class="sidebar">	<!-- SIDEBAR -->
+		<nav>
+			<img src="images/coffee.png" alt="">
+			<ul>
+				<a href="index.html"><div class="list"><li class="first">Home</li></div></a>
+				<a href="about.html"><div class="list"><li>About</li></div></a>
+				<div class="list">
+					<li class="test">Menu
+						<div class="extend sidebar">	<!-- POPUP SIDEBAR -->
+							<ul>
+								<a href="drinks.html"><li class="popup first">Drinks</li></a>
+								<a href="drinksup.html"><li class="popup"> Drink up</li></a>
+							</ul>
+						</div>	<!-- END OF POPUP SIDEBAR -->
+					</li>
+				</div>
+				<a href="contact.html"><div class="list"><li>Contact</li></div></a>
+                 <a href="cart.html"><div class="list"><li>order</li></div></a>
+			</ul>
+		</nav>
+	</section>	<!-- END OF SIDEBAR -->
+    
+    
+    
+	<section class="content menu">
+		<div class="menu-wrapper">
+    
+    
+     <div id="wrapper">
+ 
+	<h1>Coffee House</h1>
+	
+	<p id="instructions">Click on a drink name, description, or price to see a drink.  Then use the Add to Cart, Remove from Cart, and Clear Cart buttons to your hearts content.</p>
+	 
+	<table id="drink_table">
+		<thead>
+			<tr>
+				<th>
+					Name
+				</th>
+				<th>
+					Description
+				</th>
+				<th>
+					Price
+				</th>
+			</tr>
+		</thead>
+		
+		<tbody id="drink_list">
+		
+		</tbody><!--#drink_list-->
+		
+	</table><!--#drink_table-->
+	
+	<div id="image_preview">
+ 		<img src="images/vanillaLatte.jpg" alt="" />
+ 		
+ 		<p class="drink_name">Drink Name</p>
+ 		
+ 		<p class="drink_desc">
+ 			Description
+ 		</p>
+ 		
+ 		<p class="drink_price">
+ 			Price
+ 		</p>
+ 
+	</div><!--#image_preview-->
+	
+	<div id="instructions" class="clear">
+		<button id="add_item">Add to Cart</button>
+		<button id="remove_item">Remove from Cart</button>
+		<button id="clear_cart"  action="cart.html" method="post" >Clear Cart</button>
+        
+       
+        
+	</div><!--#controls-->
+	
+	
+	<h2>
+		Shopping Cart
+	</h2>
+	<table id="shopping_cart">
+		<thead>
+			<tr>
+				<th>Drink</th>
+				<th># Drinks</th>
+				<th>Price</th>
+			<tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>
+					Grand Total:
+				</th>
+				<td id="drinks_total"></td>
+				<td id="grand_total"></td>
+			</tr>
+		</tfoot>
+	</table>
+	
+         <form class="checkout" action="cart.html" method="post">
+            <div>
+				    <input type="submit" value="CheckOut" class="btn"/>
+            </div>
+        </form> 
+         
+ </div><!--#wrapper-->
+    
+</div>
+	</section>
+
+	<footer>
+		<a href="http://facebook.com"><img src="png/facebook-square.png" alt=""></a>
+		<a href="http://twitter.com"><img src="png/twitter.png" alt=""></a>
+		<a href="mailto:abc@gmail.com"><img src="png/mail.png" alt=""></a>
+	</footer>
+
+	
+</body>
+</html>
